@@ -1,4 +1,9 @@
-# Malody 判定逆向（PC + Android）
+# malody-hitwindow
+
+> Reverse-engineered Malody hit-judgment windows for PC (x86) and Android (arm64):
+> judge functions, window tables and per-level offsets — all five judgment levels verified on-device.
+
+[English](README.en.md) | 中文
 
 Malody 判定逻辑逆向的脚本与笔记。
 
@@ -70,7 +75,7 @@ docs/      逆向笔记
 
 ```powershell
 & 'C:\Users\lenov\frida-diagnosis\Connect-JsHookGadget.ps1' -PackageName 'me.mugzone.malody' -RestartApp
-& 'F:\frida16\Scripts\python.exe' -u 'C:\Users\lenov\malody_re\malody-judge-re\android\malody_judge_run.py'
+& 'F:\frida16\Scripts\python.exe' -u 'C:\Users\lenov\malody_re\malody-hitwindow\android\malody_judge_run.py'
 ```
 
 按等级分文件存日志：加 `--label A` → `judge_android_A.txt`；`--append` 可改为追加。
